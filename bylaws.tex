@@ -1,0 +1,51 @@
+\pdfoutput=1
+\documentclass[12pt]{article}
+
+\usepackage[letterpaper,margin=1.0in,lmargin=1.5in]{geometry}
+\linespread{1.2}
+
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+   colorlinks,
+   linkcolor=blue,
+   citecolor=red,
+   urlcolor=blue
+}
+
+\usepackage{titletoc}
+\usepackage[compact,explicit]{titlesec}  
+
+\renewcommand{\thesection}{\uppercase{Article} \Roman{section}:}
+\titleformat{\section}[block]
+            {\normalfont\fontsize{12}{15}\bfseries}{\hspace{-3em}\thesection}{0.5em}{\uppercase{#1}}
+\titlespacing{\section}{0pt}{2em}{1em}
+\dottedcontents{section}[5em]{}{7em}{1pc}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\titleformat{\subsection}[runin]
+            {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{0.3em}{#1.}
+\titlespacing{\subsection}{-15pt}{*1}{*1}
+
+
+\title{Bylaws of\\ Ujamaa Community Land Holdings, Inc.}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\input{name_and_purpose}
+\input{membership}
+\input{directors}
+\input{officers}
+\input{conflicts}
+\input{stewardship}
+\input{ownership}
+\input{subsidiaries}
+\input{amendment}
+\input{dissolution}
+\input{misc}
+\input{initial}
+
+\end{document}
